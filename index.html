@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head> <link rel="icon" type="image/png" href="icon1.png" id="iconimage">  <title>apple clicker</title></head>
+
+
+<body style= "background-image: url('paper.png'); font-family: 'Courier New', Courier, monospace; color:#404040">
+<h1> welcome to my <i>apple clicker</i> </h1>
+<a href="whatsthis.html" style="color:#404040"><h5>whats this?</h5></a>
+<img src="1.png" id="appleimg" width="500" height="auto" style="margin: 0px 0px" >
+    <script>
+        const meep = document.getElementById("appleimg")
+        meep.addEventListener("click", applecalc)
+        let stage = 1
+        let full = 0
+        function applecalc(){
+            stage ++
+            if 
+        
+                        (stage === 2) {document.getElementById("appleimg").src = "2.png",document.getElementById("appleimg").width = 400,document.getElementById("appleimg").style.margin = "1px 1px"}
+                else if (stage === 3) {document.getElementById("appleimg").src = "3.png",document.getElementById("appleimg").width = 600,document.getElementById("appleimg").style.margin = "0px -80px"}
+                else if (stage === 4) {document.getElementById("appleimg").src = "4.png",document.getElementById("appleimg").width = 400,document.getElementById("appleimg").style.margin = "0px 0px"}
+                else if (stage === 5) {document.getElementById("appleimg").src = "5.png",document.getElementById("appleimg").width = 400, document.getElementById("appleimg").style.margin = "0px 0px"}
+                else if (stage >= 6) { stage = 1, full ++, document.getElementById("appleclicked").textContent = full,document.getElementById("appleimg").src = "1.png", document.getElementById("appleimg").style.margin = "0px 0px" }
+        }
+         let iconimg = 1
+        setInterval(() => {
+           iconimg++
+            if 
+        
+                        (iconimg === 2) {document.getElementById("iconimage").href = "icon2.png"}
+                else if (iconimg === 3) {document.getElementById("iconimage").href = "icon3.png"}
+                else if (iconimg === 4) {document.getElementById("iconimage").href = "icon4.png"}
+                else if (iconimg === 5) {document.getElementById("iconimage").href = "icon5.png"}
+                else if (iconimg >= 6) { iconimg = 1,document.getElementById("iconimage").href = "icon1.png"}
+           
+        }, 500);
+    </script>
+<h3> youve clicked the apple  times <span id="appleclicked">0</span> times</h3>
+
+</body>
+
+
+
+</html>
